@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Story Book</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC' rel='stylesheet' type='text/css'>
+		<!-- Link to GSAP HERE -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body onload="init();">
+		<nav id="side-nav" onmouseover="hoverOn()" onmouseout="hoverOff()"> 
+			<h3>Table of Content</h3>
+			<ul>
+				<li><a onclick="flipPages(0)">Page 2</a></li>
+				<li><a onclick="flipPages(1)">Page 4</a></li>
+				<li><a onclick="flipPages(2)">Page 6</a></li>
+				<li><a onclick="flipPages(3)">Page 8</a></li>
+				<li><a onclick="flipPages(4)">Page 10</a></li>
+				<li><a onclick="flipPages(5)">Page 12</a></li>
+				<li><a onclick="flipPages(6)">Page 14</a></li>
+				<li><a onclick="flipPages(7)">Page 16</a></li>
+				<li><a onclick="flipPages(8)">Page 18</a></li>
+				<li><a onclick="flipPages(9)">Page 20</a></li>
+			</ul>
+		</nav>
+
+		<div id="book">
+			<div id="cover">
+				<img id="bookCover" src="img/bookCover.jpg" alt="book cover" onclick="openBook()">	
+				<img id="backCover" src="img/Blank.jpg">
+			</div>
+
+			<div class="page" onclick="next()">
+				<img class="pre" src="Story1/img/frog2.png">
+				<h1 id="title" align="center">The Little Frog <br> in <br> the Well</h1>
+				<img class="next" src="Story1/img/frog1.jpg">
+			</div>
+	 		<div class="page" onclick="next()">
+				<img class="pre" src="img/Blank.jpg">
+				<p>There was a Little Frog who lived at the bottom of a deep, dark well.<br><br>
+ 				It was a very old well filled with shallow water at the bottom.The walls of the well were covered with wet moss.<br><br>
+ 				When the Little Frog was thirsty, he drank a little bit of the well water,and when he was hungry, he ate some insects.When he was tired, he lay on a little rock at the bottom of the well and looked up at the sky above him.<br><br>
+ 				He was very happy and satisfied.</p>
+				<img class="next" src="Story1/img/frog4.jpg">
+			</div>
+			<div class="page" onclick="next()">
+				<img class="pre" src="img/Blank.jpg">
+				<p>The Little Frog has been living in the old well since he was born.He had never been to the outside world.<br><br>
+ 				Birds would fly by and stop at the edge of the well and the Little Frog would always look up and say 
+ 				<br><br>"Hello! Why don't you come down here and play with me. It's so pleasant down here. 
+ 				I have cool water to drink and countless insects to eat. At night, I can watch the twinkling stars, and sometimes I can see the beatuiful moon too."
+				</p>
+
+				<img class="next" src="Story1/img/frog6.png">
+			</div>
+	 		<div class="page">
+				<img class="pre" src="img/Blank.jpg">
+				<p id="p1" onclick="nextPar()">One day, a yellow sparrow stopped by at the edge of the well.
+				<br><br>"Hello, Mr. Yellow Sparrow. How are you? Please come down to my most beautiful house."
+				The yellow sparrow didn't say a word and flew away.
+				The next day, the sparrow came again and the same thing happened.
+				It went on for <em>six</em> days.
+				On the seventh day, the yellow sparrow said,
+				<br><br>"Little Frog, may I show you the outside world?"
+				But the Little Frog refused the offer.
+				The Yellow Sparrow became angry and flew down to the bottom of the well.
+				</p>
+
+				<p id="p2" onclick="next()">The birds would then tell the Little Frog 
+				<br><br>"Hi, Little Frog! The outside world is much bigger and nicer. It's many times more beautiful than your little well at the bottom."
+ 				The Little Frog didn't believe them.
+ 				<br><br>"Don't lie to me, I don't believe there is any place better than here."
+ 				Gradually, all the birds began to dislike him.
+ 				They thought he was too stubborn and stopped talking to him.
+ 				The Little Frog couldn't understand why nobody would like to come down to his nice place.</p>
+				<img class="next" src="Story1/img/frog3.jpg">
+			</div>
+			<div class="page" onclick="next()">
+				<img class="pre" src="img/Blank.jpg">
+				<p>He picked up the Little Frog and flew out of the well.<br><br>
+				The Little Frog closed his eyes. <br><br>
+				He has been in the dark well for so long, his eyes has to adjusted to the light.
+				</p>
+				<img class="next" src="Story1/img/mountain.jpg">
+			</div>
+			<div class="page" onclick="next()">
+				<img class="pre" src="img/Blank.jpg">
+				<p>When the Little Frog opened his eyes again, he was shocked by all the things he sees.<br><br>
+				"Wow! How is it that the ouside world is so big! What are all these green high and low things?"<br><br>
+				The Yellow Sparrow responded, "These are mountains and valleys. There are countless mountains in this world."
+				</p>
+				<img class="next" src="Story1/img/river_sea.jpg">
+			</div>
+			<div class="page" onclick="next()">
+				<img class="pre" src="img/Blank.jpg">
+				<p>"What is this long, silvery, shiny view?"<br>
+				"It is a river." <br><br>
+				"Then what is that huge, blue thing over there?"<br>
+ 				"That is the sea."<br><br>
+ 				"That river and sea, how much water do they have? How much bigger are they than my well?"<br><br>
+ 				The Little Frog began to realize how tiny his well was.
+ 				"Let's go down, okay?"
+		 		The yellow sparrow put the Little Frog down on the ground and flew away.
+				</p>
+				<img class="next" src="Story1/img/frog5.jpg">
+			</div>
+			<div class="page" onclick="next()">
+				<img class="pre" src="img/Blank.jpg">
+				<p>The Little Frog jumped into the grass and saw many beautiful flowers of different colors.<br><br>
+				He had never seen such beautiful flowers and had never smelled such nice scents.</p>
+				<img class="next" src="Story1/img/frog7.png">
+			</div>
+			<div class="page" onclick="next()">
+				<img class="pre" src="img/Blank.jpg">
+				<p>He kept going and saw many tall trees in the forest and stumbled upon a large beautiful pond.<br><br>
+				In the pond, the lotus flowers were dancing in the air, and the lotus leaves were floating on the water like umbrellas.There were many fish in the water.<br><br>
+				The Yellow Sparrow came back and asked,"Little Frog! How's this outside world? Big? Beautiful?"
+				</p>
+				<img class="next" src="Story1/img/PondLeft.jpg">
+				
+			</div>
+			<div class="page" onclick="next()">
+				<img class="pre" src="Story1/img/PondRight.png">
+				<img class="next" src="img/Blank.jpg">
+			</div>
+	 		<div class="page">
+	 			<p>The Little Frog responded," If you had not bought me out to see this world, I would never had known that there was such beautiful things that exist outside my well.Thank you very much."<br><br>
+				The Little Frog never tried to go back to his old well again.</p>
+				<p id="ending">The End</p>
+				<img class="pre" src="img/Blank.jpg">
+			</div>			
+		</div>
+	</body>
+</html>
